@@ -12,7 +12,7 @@ Simulando notificaçãoo de equipamentos que monitoram a cada 30 segundos as con
  
 # Demonstração
 
-[Link para video no Youtube](http://https://youtu.be/1Gf43pl_zEU "Link para video no Youtube")
+[Link para video no Youtube](https://youtu.be/1Gf43pl_zEU "Link para video no Youtube")
 
 
 ## Configuração
