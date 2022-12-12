@@ -1,30 +1,48 @@
-# gRPC-WS-Example
-This is the gRPC equivalent of the RESTful WS example, meant to illustrate the difference between generic interfaces (i.e., RESTful) and application-specific interfaces.
+# simple-web-server-with-grpc-pub-sub-ma
 
-See here for instructions on how to install gRPC and compile the interface specification (.proto): https://grpc.io/docs/languages/python/quickstart/
+Atividade Pub-Sub
+Disciplina: Software para Sistemas Ubíquos
+Alunos: 
+Ariel Marte (201900264)
+Marco Feitosa (201905542)
 
-Step-by-step:
+## Contexto
+Simulando notificaçãoo de equipamentos que monitoram a cada 30 segundos as condições
+ de temperatura salas de servidores, utilizando kafka, gRPC e Gooogle Cloud.
+ 
+## Demonstração
 
-1) Install PIP.
+[Link para video no Youtube](http://https://youtu.be/1Gf43pl_zEU "Link para video no Youtube")
 
-$:> sudo apt install python3-pip
 
-2) Upgrade PIP
+## Configuração
 
-$:> python3 -m pip install --upgrade pip
+Passo a passo:
 
-3) Install gRPC runtime
+1) Instale o PIP.
 
-$:> python3 -m pip install grpcio
+`sudo apt install python3-pip`
 
-4) Install gRPC tools
+2) Atualize o PIP
 
-$:> python3 -m pip install grpcio-tools
+`python3 -m pip install --upgrade pip`
 
-5) Clone this repo
+3) Instale o tempo de execução do gRPC
 
-6) Compile interface specification (Protocol Buffers .proto file)
+`python3 -m pip install grpcio`
 
-$:> cd python
+4) Instale as ferramentas gRPC
 
-$:> python3 -m grpc_tools.protoc -I../protos --python_out=. --grpc_python_out=. ../protos/EmployeeService.proto
+`python3 -m pip install grpcio-tools`
+
+5) Clone este repositório
+
+6) Compile a especificação da interface (arquivo .proto de buffers de protocolo)
+
+`cd python`
+
+`python3 -m grpc_tools.protoc -I../protos --python_out=. --grpc_python_out=. ../protos/SensorService.proto `
+
+7) Instale o Banco de Dados
+
+`pip install mariadb`
