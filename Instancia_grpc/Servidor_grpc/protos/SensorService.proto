@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.iotservice";
+option java_outer_classname = "IoTServiceProto";
+option objc_class_prefix = "TEMP";
+
+package sensor_service;
+
+service SensorService {
+  
+  // Consultar dados por localizacao
+  rpc ConsultarListaPorLocalizacao (Localizacao) returns (ListaDados) {}
+  
+  rpc ConsultarListaPorData (Data) returns (ListaDados) {}
+  
+  rpc ConsultarListaPorDataELocalizacao (LocalData) returns (ListaDados) {}
+  
+}
+
+message Data {
+	string data = 1;
+}
+
+message Localizacao {
+  string localizacao = 1;
+}
+
+message LocalData {
+	Localizacao local = 1;
+	Data data = 2;
+}
+
+message Dado {
+  uint32 id = 1;
+  string data = 2;
+  string localizacao = 3;
+  float valor = 4;
+}
+
+message ListaDados {
+	repeated Dado dados = 1;
+}
+
+message EmptyMessage{}
+
