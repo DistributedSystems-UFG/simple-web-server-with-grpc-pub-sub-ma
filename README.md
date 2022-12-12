@@ -5,7 +5,7 @@ See here for instructions on how to install gRPC and compile the interface speci
 
 Step-by-step:
 
-1) Install PIP
+1) Install PIP.
 
 $:> sudo apt install python3-pip
 
