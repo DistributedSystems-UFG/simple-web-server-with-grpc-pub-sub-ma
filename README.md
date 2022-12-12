@@ -3,14 +3,14 @@
 Atividade Pub-Sub
 Disciplina: Software para Sistemas Ubíquos
 Alunos: 
-Ariel Marte (201900264)
-Marco Feitosa (201905542)
+- Ariel Marte (201900264)
+- Marco Feitosa (201905542)
 
-## Contexto
+# Contexto
 Simulando notificaçãoo de equipamentos que monitoram a cada 30 segundos as condições
  de temperatura salas de servidores, utilizando kafka, gRPC e Gooogle Cloud.
  
-## Demonstração
+# Demonstração
 
 [Link para video no Youtube](http://https://youtu.be/1Gf43pl_zEU "Link para video no Youtube")
 
